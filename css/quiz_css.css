@@ -1,8 +1,12 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     background-image: linear-gradient(to right bottom, #b2d5fc, #56abd5, #025091);
-    height: 79vh;
+    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -55,7 +59,7 @@ h1 {
 #container {
     width: 50%;
     height: 430px;
-    margin: 150px auto;
+    /* margin: 150px; */
     padding: 10px 30px;
     background-image: linear-gradient(to right bottom, rgb(138, 138, 255), rgb(194, 218, 255));
     border-radius: 15px;
@@ -101,4 +105,26 @@ p {
 
 input[type="radio"] {
     cursor: pointer;
+}
+
+#ret_button {
+    height: 40px;
+    width: 15%;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(71, 74, 86);
+}
+
+#ret_button a {
+    color: rgb(12, 12, 94);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#ret_button:hover {
+    transform: scale(1.05);
 }
